@@ -29,7 +29,7 @@ def user_input_features():
   return features
 
 df = user_input_features()
-datos =  pd.read_csv('datos', encoding='latin-1')
+datos =  pd.read_csv('datos.csv', encoding='latin-1')
 X = datos.drop(columns='Costo')
 y = datos['Costo']
 
