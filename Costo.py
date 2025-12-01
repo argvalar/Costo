@@ -10,18 +10,18 @@ st.header('Datos')
 def user_input_features():
   # Entrada
   Presupuesto = st.number_input('Presupuesto:', min_value=0, max_value=3000, value = 0, step = 1)
-  Tiempo invertido = st.number_input('Tiempo invertido en la actividad (minutos):',  min_value=0, max_value=200, value = 0, step = 1)
+  Tiempo_invertido = st.number_input('Tiempo invertido en la actividad (minutos):',  min_value=0, max_value=200, value = 0, step = 1)
   Tipo = st.number_input('Tipo', min_value=0, max_value=4, value = 0, step = 1)
   Momento = st.number_input('Momento (mañana:1, tarde:2, noche:3):', min_value=0, max_value=3, value = 0, step = 1)
-  No. de personas = st.number_input('Número de personas que realizaron la actividad:', min_value=0, max_value=50, value = 0, step = 1)
+  No_de _ersonas = st.number_input('Número de personas que realizaron la actividad:', min_value=0, max_value=50, value = 0, step = 1)
 
 
 
   user_input_data = {'Presupuesto': Presupuesto,
-                     'Tiempo invertido': Tiempo invertido,
+                     'Tiempo invertido': Tiempo_invertido,
                      'Tipo': Tipo,
                      'Momento': Momento,
-                     'No. de persona': No. de personas
+                     'No. de persona': No_de_personas
                      }
 
   features = pd.DataFrame(user_input_data, index=[0])
