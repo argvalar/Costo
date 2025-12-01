@@ -13,7 +13,7 @@ def user_input_features():
   Tiempo_invertido = st.number_input('Tiempo invertido en la actividad (minutos):',  min_value=0, max_value=200, value = 0, step = 1)
   Tipo = st.number_input('Tipo', min_value=0, max_value=4, value = 0, step = 1)
   Momento = st.number_input('Momento (mañana:1, tarde:2, noche:3):', min_value=0, max_value=3, value = 0, step = 1)
-  No_de _ersonas = st.number_input('Número de personas que realizaron la actividad:', min_value=0, max_value=50, value = 0, step = 1)
+  No_de_personas = st.number_input('Número de personas que realizaron la actividad:', min_value=0, max_value=50, value = 0, step = 1)
 
 
 
